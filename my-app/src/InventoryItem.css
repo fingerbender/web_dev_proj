@@ -1,0 +1,29 @@
+.itemBlock{
+    background-color: black;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.itemBlock img{
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #363b46;
+    padding: 0px;
+}
+.itemBlock p textarea{
+    border-radius: 10px;
+    width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    color: white
+}
+
+.itemBlock button{
+    color: white;
+    background-color: #363b46;
+    border-radius: 20px;
+}

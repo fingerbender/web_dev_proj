@@ -1,0 +1,11 @@
+.canvas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-spacing: 20px;
+    background-color: #363b46;
+    border-radius: 20px;
+    width: 90vw;
+    margin: 20px;
+}

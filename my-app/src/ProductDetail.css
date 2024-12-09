@@ -1,0 +1,70 @@
+form{
+    margin-top: 5vh;
+    width: 50vw;
+    background-color: #363b46;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: calc(20px + 1vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+form img{
+    margin: 10px auto;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 20px;
+}
+form span {
+    background-color: #282C34;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+
+@media (max-width: 650px) {
+    form{
+        flex-direction: column;
+    }
+}
+form label{
+    text-align: left;
+    padding-inline-start: 20px;
+}
+input{
+    width: calc(50vw - 70px);
+    margin-left: 10px;
+    background-color: white;
+}
+textarea{
+    
+    align-self: first baseline;
+    vertical-align: top;
+    margin-left: 10px;
+    width: calc(50vw - 70px);
+    height: 50px;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+form button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+}
+form a button{
+    width: 50vw;
+}
+#prevItem{ /*for AddInventory.js*/
+    color: white;
+    position: fixed;
+    top: 70vh;
+    left: 5vh;
+}
+
+#nextItem{ /*for AddInventory.js*/
+    color: white;
+    position: fixed;
+    top: 70vh;
+    right: 5vh;
+}

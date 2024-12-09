@@ -1,0 +1,23 @@
+#NavBar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 10vh;
+    background-color: #363b46;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#NavBar p a {
+    color: white;
+    font-size: larger;
+    padding-inline: 5vw;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 25px; 
+}
+a:hover{
+    background-color: #444a56;
+
+}
