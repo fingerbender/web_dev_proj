@@ -1,0 +1,23 @@
+#locContainer{
+    display: flex;
+    border: 2px solid yellowgreen;
+}
+#locContainer p {
+    text-align: center; 
+}
+.itemContainer{
+
+    border: 2px solid orange;
+}
+.dropZones{
+    width: 12vw;
+    border: 2px solid yellow;
+}
+
+.itemContainer img{
+    width: 10vw;
+}
+.itemContainer p{
+    font-size:xx-small;
+    text-align: center;
+}
