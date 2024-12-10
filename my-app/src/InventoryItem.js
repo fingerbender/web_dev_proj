@@ -16,6 +16,10 @@ function InventoryItem(props) {
         props.delItem(props.item.SKU);
     }
 
+    // const images = require.context('./pic', true);
+    // const imageList = images.keys().map(image => images(image));
+    // console.log("img",imageList);
+
     return (
         <div className='itemBlock'>
 
@@ -23,7 +27,7 @@ function InventoryItem(props) {
             <h4>{props.item.name}</h4>
             <img src={props.item.image} alt={"image of " + props.item.name}></img>
             <p>SKU: {props.item.SKU}</p>
-            
+
             <p>Quantity: {props.item.qty}</p>
             <p>Price: ${props.item.price}</p>
             <Link

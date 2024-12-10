@@ -4,8 +4,8 @@
         "name": "Apple",
         "qty": 50,
         "price": 1.99,
-        "description": "Crunchy and sweet; keeps doctor unemployed.",
-        "image": "pic/apple.jpg",
+        "description": "Crunchy and sweet; keeps the doctor unemployed.",
+        "image": "/pic/apple.jpg",
         "location": "produce1"
     },
     {
