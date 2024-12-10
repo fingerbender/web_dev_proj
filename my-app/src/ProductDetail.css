@@ -27,6 +27,10 @@ form span {
         flex-direction: column;
     }
 }
+
+form h3{
+    text-align: center;
+}
 form label{
     text-align: left;
     padding-inline-start: 20px;

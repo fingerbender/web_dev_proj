@@ -4,14 +4,21 @@
     width: 200px;
     padding: 10px;
     margin: 10px;
-}
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemBlock h4 {
+    text-align: center;
+}
 .itemBlock img{
     border-radius: 20px;
     width: 100px;
     height: 100px;
     background-color: #363b46;
     padding: 0px;
+
 }
 .itemBlock p textarea{
     border-radius: 10px;
@@ -20,6 +27,7 @@
     overflow-y: auto;
     background-color: black;
     color: white
+
 }
 
 .itemBlock button{

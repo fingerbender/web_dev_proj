@@ -27,7 +27,7 @@ export default function ProductDetail(props) {
         qty: 0,
         price: 0,
         description: "",
-        image: "/pic/default.jpg"
+        image: "pic/default.jpg"
     };
 
     const [invItem, setInvItem] = useState(resetItem);
@@ -81,11 +81,12 @@ export default function ProductDetail(props) {
             isNaN(newPrice)) {
             newErrors.price = "Price must be a positive 1 to 20 digit float.";
         }
+        //dont need to validate location, bc it selects from a list, has default value = storage
         if (newDesc.length === 0) {
             newErrors.description = "Please describe the item."
         }
         if (newImg.length === 0) {
-            invItem.image = "/pic/default.jpg";
+            invItem.image = "pic/default.jpg";
         }
 
         //change state => trigger render() again, including error msgs
@@ -101,7 +102,7 @@ export default function ProductDetail(props) {
         const msgbox = document.getElementById('msgbox')
         msgbox.style.color = 'white';
         msgbox.innerText = "Delete successful! Redirecting..."
-        setTimeout(() => { goto('/'); }, 2000)
+        setTimeout(() => { goto('/inventory'); }, 2000)
         props.delItem(SKU);
     }
 
@@ -116,7 +117,7 @@ export default function ProductDetail(props) {
         setErrors({}); //reset error msg
 
         document.getElementById('msgbox').innerText = "Update successful! Redirecting..."
-        setTimeout(() => { goto('/'); }, 2000)
+        setTimeout(() => { goto('/inventory'); }, 2000)
     }
 
 
@@ -141,6 +142,19 @@ export default function ProductDetail(props) {
                         value={invItem.price} onChange={handleChange} />
                     <p style={{ color: 'red' }}>{errors?.price}</p>
                 </label>
+                <label>Location:
+                <select id="location" defaultValue={"storage"} //change to selection from list!!!!!!
+                    value={invItem?.location} onChange={handleChange}>
+                        <option value="storage">Storage</option>
+                        <option value="produce1">Produce Area 1</option>
+                        <option value="produce2">Produce Area 2</option>
+                        <option value="aisle1">Aisle 1</option>
+                        <option value="aisle2">Aisle 2</option>
+                        <option value="freezer1">Freezer 1</option>
+                        <option value="freezer2">Freezer 2</option>
+                </select>
+                <p style={{ color: 'red' }}>{errors?.location}</p>
+            </label>
                 <label>Description:
                     <textarea id="description" placeholder="Product Description..."
                         value={invItem.description} onChange={handleChange} />
@@ -155,7 +169,7 @@ export default function ProductDetail(props) {
                 <button id="updateBtn" type="submit">Update</button>
                 <button id="deleteBtn" type="click" onClick={handleDelete}>Delete</button>
                 <Link
-                    to={'/'}
+                    to={'/inventory'}
                     element={<InventoryList />}>
                     <button>Back</button>
                 </Link>

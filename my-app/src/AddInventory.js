@@ -17,7 +17,7 @@ export default function AddInventory(props){
         qty: 0,
         price: 0,
         description: "",
-        image: "/pic/default.jpg"
+        image: "pic/default.jpg"
     };
 
     const [invItem, setInvItem] = useState(resetItem);
@@ -95,7 +95,7 @@ export default function AddInventory(props){
             setErrors({}); //reset error msg
 
             document.getElementById('msgbox').innerText="Update successful! Redirecting..."
-            setTimeout(()=>{goto('/');}, 2000)
+            setTimeout(()=>{goto('/inventory');}, 2000)
         }else{
             setInvItem(invItem); //trigger render of error msg
         }
@@ -126,6 +126,19 @@ export default function AddInventory(props){
                     value={invItem?.price} onChange={handleChange} />
                 <p style={{ color: 'red' }}>{errors?.price}</p>
             </label>
+            <label>Location:
+                <select id="location" defaultValue={"storage"}
+                    value={invItem?.location} onChange={handleChange}>
+                        <option value="storage">Storage</option>
+                        <option value="produce1">Produce Area 1</option>
+                        <option value="produce2">Produce Area 2</option>
+                        <option value="aisle1">Aisle 1</option>
+                        <option value="aisle2">Aisle 2</option>
+                        <option value="freezer1">Freezer 1</option>
+                        <option value="freezer2">Freezer 2</option>
+                </select>
+                <p style={{ color: 'red' }}>{errors?.location}</p>
+            </label>
             <label>Description:
                 <textarea id="description" placeholder="Product Description..."
                     value={invItem?.description} onChange={handleChange} />
@@ -139,7 +152,7 @@ export default function AddInventory(props){
             <p id="msgbox" style={{ color: 'yellowgreen' }}></p>
             <button id="updateBtn" type="submit">Update</button>
             <Link
-                to={'/'}
+                to={'/inventory'}
                 element={<InventoryList />}>
                 <button>Cancel & Go Back</button>
             </Link>

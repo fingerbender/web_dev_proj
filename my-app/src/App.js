@@ -1,11 +1,13 @@
 import logo from './logo.png';
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import inventories from './inventory.json';
+import Home from './Home';
 import InventoryList from './InventoryList';
 import ProductDetail from './ProductDetail';
 import AddInventory from './AddInventory';
+import DDorganizer from './DDorganizer';
 import NavBar from './NavBar';
 
 class App extends React.Component {
@@ -17,6 +19,8 @@ class App extends React.Component {
     //this.deleteItem = this.deleteItem.bind(this); 
     //this.addItem = this.addItem.bind(this);
   }
+
+
 
   //arrow function dont need bind!!
   deleteItem = (SKU) => {
@@ -46,10 +50,25 @@ class App extends React.Component {
     console.log('After update: ', this.state);
   }
 
+  setLocation = (SKU, newLocation) => {
+    console.log('Before setLocation:', this.state.list);
+    console.log("new loc", newLocation);
+    // Use the prevState to update the location of the item
+    this.setState((prevState) => {
+      // Map through the list and update the location for the specific SKU
+      const updatedList = prevState.list.map((item) =>
+        item.SKU === SKU ? { ...item, location: newLocation } : item
+      );
+      return { list: updatedList };  // Return the new state with updated list
+    }, () => {
+      console.log('After setLocation:', this.state.list);
+    });
+  };
+
   render() {
     //console.log("render: ", this.state.list, "type: ", Array.isArray(this.state.list));
     return (
-      <div className="App">
+      <div id="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="React Grocery Store logo" />
           <h1>
@@ -57,12 +76,19 @@ class App extends React.Component {
           </h1>
         </header>
         <main className="App-main" >
-          <BrowserRouter>
+          <HashRouter>
             <NavBar></NavBar>
             <Routes>
 
               <Route
                 path='/'
+                element={<Home
+                >{/*opening tag closed here*/}
+                </Home >}
+              ></Route>
+
+              <Route
+                path='/inventory'
                 element={<InventoryList
                   invList={this.state.list}
                   delItem={this.deleteItem}
@@ -89,6 +115,14 @@ class App extends React.Component {
               ></Route>
 
               <Route
+                path='/DDorganizer'
+                element={<DDorganizer
+                  invList={this.state.list}
+                  setLoc={this.setLocation}
+                ></DDorganizer>}
+              ></Route>
+
+              <Route
                 path='/about'
                 element={<><h1>About this App:</h1>
                   <p>Click on the inventory items to go to the detail page.</p>
@@ -99,7 +133,7 @@ class App extends React.Component {
                   <p>Click on the Add item tab to add new item.</p>
                   <p>This is a Single Page Application made with React.</p>
                   <p>There is no database connected to the app, so all data will be lost upon page refresh.</p>
-                  </>}
+                </>}
               ></Route>
 
               <Route
@@ -108,7 +142,7 @@ class App extends React.Component {
               ></Route>
 
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
 
           {/*pass down props in format: passedPropName = {this.state.locPropName} */}
           {/*pass down functions in format: passedPropName = {this.locFuncName} */}

@@ -5,7 +5,8 @@
         "qty": 50,
         "price": 1.99,
         "description": "Crunchy and sweet; keeps doctor unemployed.",
-        "image": "/pic/apple.jpg"
+        "image": "pic/apple.jpg",
+        "location": "produce1"
     },
     {
         "SKU": "00000002",
@@ -13,7 +14,8 @@
         "qty": 40,
         "price": 9.99,
         "description": "It used to moo, now it sizzles.",
-        "image": "/pic/beef.jpg"
+        "image": "pic/beef.jpg",
+        "location": "freezer1"
     },
     {
         "SKU": "00000003",
@@ -21,7 +23,8 @@
         "qty": 50,
         "price": 1.99,
         "description": "'My cabbages!' a famous cabbage vendor lamented...",
-        "image": "/pic/cabbage.jpg"
+        "image": "pic/cabbage.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000004",
@@ -29,7 +32,8 @@
         "qty": 30,
         "price": 2.99,
         "description": "Italian mafia's favorite tool to launder money and ... make body disappear.",
-        "image": "/pic/dough.jpg"
+        "image": "pic/dough.jpg",
+        "location": "freezer2"
     },
     {
         "SKU": "00000005",
@@ -37,7 +41,8 @@
         "qty": 10,
         "price": 15.99,
         "description": "Sends vibration so powerful, it could massage your brian.",
-        "image": "/pic/e-toothbrush.jpg"
+        "image": "pic/e-toothbrush.jpg",
+        "location": "aisle1"
     },
     {
         "SKU": "00000006",
@@ -45,7 +50,8 @@
         "qty": 10,
         "price": 2.99,
         "description": "If you send your girl flour, you'll probably never see her again.",
-        "image": "/pic/flour.jpg"
+        "image": "pic/flour.jpg",
+        "location": "aisle2"
     },
     {
         "SKU": "00000007",
@@ -53,7 +59,8 @@
         "qty": 10,
         "price": 1.99,
         "description": "Do vampires hate garlic or the odor resulted from its excessive consumption?",
-        "image": "/pic/garlic.jpg"
+        "image": "pic/garlic.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000008",
@@ -61,7 +68,8 @@
         "qty": 10,
         "price": 10.99,
         "description": "Germaphobe's favorite Christmas gift.",
-        "image": "/pic/soap.jpg"
+        "image": "pic/soap.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000009",
@@ -69,7 +77,8 @@
         "qty": 10,
         "price": 6.99,
         "description": "Cold enough to heal, also hard enough to wound.",
-        "image": "/pic/icepack.jpg"
+        "image": "pic/icepack.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000010",
@@ -77,7 +86,8 @@
         "qty": 5,
         "price": 5.99,
         "description": "Does it count as Cannibalism if it's drank by Jews?",
-        "image": "/pic/juice.jpg"
+        "image": "pic/juice.jpg",
+        "location": "freezer2"
     },
     {
         "SKU": "00000011",
@@ -85,7 +95,8 @@
         "qty": 5,
         "price": 15.99,
         "description": "half the world loves it, while the other half hates it.",
-        "image": "/pic/kimchi.jpg"
+        "image": "pic/kimchi.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000012",
@@ -93,7 +104,8 @@
         "qty": 5,
         "price": 2.99,
         "description": "No longer need to have an idea to have a light bulb, what a great invention!",
-        "image": "/pic/lightbulb.jpg"
+        "image": "pic/lightbulb.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000013",
@@ -101,7 +113,8 @@
         "qty": 10,
         "price": 5.99,
         "description": "AI understood it as a room with mush in it.",
-        "image": "/pic/mushroom.jpg"
+        "image": "pic/mushroom.jpg",
+        "location": "produce2"
     },
     {
         "SKU": "00000014",
@@ -109,7 +122,8 @@
         "qty": 5,
         "price": 2.99,
         "description": "A bread that is shared between zero people.",
-        "image": "/pic/naan.jpg"
+        "image": "pic/naan.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000015",
@@ -117,7 +131,8 @@
         "qty": 5,
         "price": 5.99,
         "description": "All good things must come to an end",
-        "image": "/pic/oxtailsoup.jpg"
+        "image": "pic/oxtailsoup.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000016",
@@ -125,7 +140,8 @@
         "qty": 10,
         "price": 3.99,
         "description": "Antithesis of Karate Chop?",
-        "image": "/pic/porkchop.jpg"
+        "image": "pic/porkchop.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000017",
@@ -133,7 +149,8 @@
         "qty": 5,
         "price": 9.99,
         "description": "Shrink-flation did it again...",
-        "image": "/pic/quailegg.jpg"
+        "image": "pic/quailegg.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000018",
@@ -141,7 +158,8 @@
         "qty": 10,
         "price": 7.99,
         "description": "You can cook one at home, or pay $15 more for it in most restaurant.",
-        "image": "/pic/ramenpack.jpg"
+        "image": "pic/ramenpack.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000019",
@@ -149,7 +167,8 @@
         "qty": 10,
         "price": 17.99,
         "description": "Still got a bear's teeth mark on it.  Now that's wild caught.",
-        "image": "/pic/salmon.jpg"
+        "image": "pic/salmon.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000020",
@@ -157,7 +176,8 @@
         "qty": 10,
         "price": 5.99,
         "description": "The American taco is a far departure from the original Aztecan tlahco.",
-        "image": "/pic/taco.jpg"
+        "image": "pic/taco.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000021",
@@ -165,7 +185,8 @@
         "qty": 5,
         "price": 8.99,
         "description": "5% ube, 95% vanilla ice cream",
-        "image": "/pic/ubeicecream.jpg"
+        "image": "pic/ubeicecream.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000022",
@@ -173,7 +194,8 @@
         "qty": 5,
         "price": 9.99,
         "description": "a must have for Western baking recipe.",
-        "image": "/pic/vanillaextract.jpg"
+        "image": "pic/vanillaextract.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000023",
@@ -181,7 +203,8 @@
         "qty": 30,
         "price": 9.99,
         "description": "Everybody loves eating it, everybody hates carrying it.",
-        "image": "/pic/watermelon.jpg"
+        "image": "pic/watermelon.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000024",
@@ -189,7 +212,8 @@
         "qty": 5,
         "price": 11.99,
         "description": "This bottoled umami wonder helps you cook like a master.",
-        "image": "/pic/sauce.jpg"
+        "image": "pic/sauce.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000025",
@@ -197,7 +221,8 @@
         "qty": 30,
         "price": 1.99,
         "description": "Shape of the Taiwan island.",
-        "image": "/pic/yam.jpg"
+        "image": "pic/yam.jpg",
+        "location": "storage"
     },
     {
         "SKU": "00000026",
@@ -205,6 +230,7 @@
         "qty": 10,
         "price": 2.99,
         "description": "Can't be a vegetarian without knowing how to distinguish it from cucumber.",
-        "image": "/pic/zucchini.jpg"
+        "image": "pic/zucchini.jpg",
+        "location": "storage"
     }
 ]

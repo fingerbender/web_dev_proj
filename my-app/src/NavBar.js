@@ -5,11 +5,19 @@ export default function NavBar(){
     return (
         <div id="NavBar">
             <p>
-                <Link to="/">Inventory</Link>
+                <Link to="/">Author</Link>
+            </p>
+
+            <p>
+                <Link to="/inventory">Inventory</Link>
             </p>
 
             <p>
                 <Link to="/add">Add Item</Link>
+            </p>
+
+            <p>
+                <Link to="/DDorganizer">Organize</Link>
             </p>
 
             <p>
