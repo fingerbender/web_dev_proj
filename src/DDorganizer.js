@@ -100,7 +100,8 @@ function DDorganizer(props) {
         setNewZone[zoneID](prev => [...prev, draggedItem]);
 
         console.log("handledrop pass data back: ", dragItemSKU, DZend);
-        //props.setLoc(dragItemSKU, DZend)
+        const dz = document.getElementById(zoneID);
+        dz.style.backgroundColor = "#282c34";
     }
 
 
