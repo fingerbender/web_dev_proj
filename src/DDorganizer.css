@@ -1,17 +1,22 @@
 #locContainer{
     display: flex;
-    border: 2px solid yellowgreen;
+}
+.dropZones{
+    width: 12vw;
+    margin: 0.5vw;
+    border: 2px solid darkslateblue;
+    border-radius: 10px;
 }
 #locContainer p {
     text-align: center; 
 }
 .itemContainer{
 
-    border: 2px solid orange;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
 }
-.dropZones{
-    width: 12vw;
-    border: 2px solid yellow;
+.itemContainer:hover{
+    border: 2px dashed darkcyan;
 }
 
 .itemContainer img{
