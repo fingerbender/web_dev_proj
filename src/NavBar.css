@@ -12,12 +12,18 @@
 #NavBar p a {
     color: white;
     font-size: larger;
-    padding-inline: 5vw;
+    padding-inline: 3vw;
     text-decoration: none;
     padding-top: 15px;
     padding-bottom: 25px; 
+    /**/
 }
 a:hover{
     background-color: #444a56;
-
+}
+@media (max-width: 485px) {
+    #NavBar{
+        height:fit-content;
+        flex-wrap: wrap;
+    }
 }

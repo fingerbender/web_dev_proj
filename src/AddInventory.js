@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import "./ProductDetail.css";                              //<-need a new one?
+import "./AddInventory.css";
 import InventoryList from './InventoryList';
 
 export default function AddInventory(props){
@@ -11,13 +11,18 @@ export default function AddInventory(props){
     //init
     const goto = useNavigate();
 
+    //used in resetItem template & validate() 
+    // how to use?  {}? ${}? `${}`?  none worked 
+    // tried different path too, from /web_dev_proj, or /src, or /public. //../public/pic/default.jpg
+    const defaultImgPath = "/pic/default.jpg";
+
     const resetItem = {
         SKU: "",
         name: "",
         qty: 0,
         price: 0,
         description: "",
-        image: "pic/default.jpg"
+        image: `${defaultImgPath}`
     };
 
     const [invItem, setInvItem] = useState(resetItem);
@@ -71,7 +76,7 @@ export default function AddInventory(props){
         }
         //image file loc check
         if (newImg.length === 0){
-            invItem.image = "/pic/default.jpg";
+            invItem.image = `${defaultImgPath}`;
         }
 
         if (index !== -1) {
@@ -102,27 +107,27 @@ export default function AddInventory(props){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form id="addform" onSubmit={handleSubmit}>
             <h3>Add New Item</h3>
             <img src={invItem?.image} alt={"image of " + invItem?.name}></img>
             
             <label>SKU: 
-                <input type="text" id="SKU" placeholder="8-13 characters" size="16"
+                <input type="text" id="SKU" placeholder="8-13 characters"
                     value={invItem?.SKU} onChange={handleChange} />
                 <p style={{color:'red'}}>{errors?.SKU}</p>
             </label>    
             <label>Product Name:
-                <input type="text" id="name" placeholder="Product Name" size="20"
+                <input type="text" id="name" placeholder="Product Name"
                     value={invItem?.name} onChange={handleChange} />
                 <p style={{ color: 'red' }}>{errors?.name}</p>
             </label>
             <label>Quantity:
-                <input type="number" step="1" min="0" max="9999" id="qty" placeholder="Quantity" size="4"
+                <input type="number" step="1" min="0" max="9999" id="qty" placeholder="Quantity"
                     value={invItem?.qty} onChange={handleChange} />
                 <p style={{ color: 'red' }}>{errors?.qty}</p>
             </label>
             <label>Price:
-                <input type="number" step="0.01" min="0" max="99999999.99" id="price" placeholder="Price" size="8"
+                <input type="number" step="0.01" min="0" max="99999999.99" id="price" placeholder="Price"
                     value={invItem?.price} onChange={handleChange} />
                 <p style={{ color: 'red' }}>{errors?.price}</p>
             </label>

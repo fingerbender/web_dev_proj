@@ -1,0 +1,27 @@
+/*add grid template*/
+
+#geo{
+    border: 2px solid yellow;
+    margin-top: 5vh;
+    width: 50vw;
+    background-color: #363b46;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: calc(20px + 1vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#geo h1{
+    text-align: center;;
+}
+#geo #map {
+    width: 46vw;
+    margin-left: 2vw;
+}
+#geo button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+}

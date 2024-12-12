@@ -1,4 +1,5 @@
-#detailform{
+#addform{
+    border: 2px solid yellow;
     margin-top: 5vh;
     width: 50vw;
     background-color: #363b46;
@@ -9,13 +10,13 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-#detailform img{
+#addform img{
     margin: 10px auto;
     width: 40vw;
     height: 40vw;
     border-radius: 20px;
 }
-#detailform span {
+#addform span {
     background-color: #282C34;
     border-radius: 20px;
     padding: 2%;
@@ -23,24 +24,24 @@
 
 
 @media (max-width: 650px) {
-    #detailform{
+    #addform{
         flex-direction: column;
     }
 }
 
-#detailform h3{
+#addform h3{
     text-align: center;
 }
-#detailform label{
+#addform label{
     text-align: left;
     padding-inline-start: 20px;
 }
-#detailform input{
+#addform input{
     width: 46vw;
     margin-left: -5px;
     background-color: white;
 }
-#detailform > label > textarea{
+#addform > label > textarea{
     width: 46vw;
     align-self: first baseline;
     vertical-align: top;
@@ -50,25 +51,12 @@
     overflow-x: auto;
     border-radius: 10px;
 }
-#detailform button{
+#addform button{
     background-color: black;
     color: white;
     border-radius: 20px;
     display: inline-block;
 }
-#detailform a button{
+#addform a button{
     width: 50vw;
-}
-#prevItem{ /*for AddInventory.js*/
-    color: white;
-    position: fixed;
-    top: 70vh;
-    left: 5vh;
-}
-
-#nextItem{ /*for AddInventory.js*/
-    color: white;
-    position: fixed;
-    top: 70vh;
-    right: 5vh;
 }

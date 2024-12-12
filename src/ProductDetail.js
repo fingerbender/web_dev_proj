@@ -123,7 +123,7 @@ export default function ProductDetail(props) {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form id="detailform" onSubmit={handleSubmit}>
                 <h3>SKU: {invItem.SKU}</h3>
                 <img src={invItem.image} alt={"image of " + invItem.name}></img>
 

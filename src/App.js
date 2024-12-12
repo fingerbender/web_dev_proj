@@ -8,7 +8,9 @@ import InventoryList from './InventoryList';
 import ProductDetail from './ProductDetail';
 import AddInventory from './AddInventory';
 import DDorganizer from './DDorganizer';
+import ContactForm from './ContactForm';
 import NavBar from './NavBar';
+import Geolocation from './Geolocation';
 
 class App extends React.Component {
   constructor(props) {
@@ -123,17 +125,17 @@ class App extends React.Component {
               ></Route>
 
               <Route
-                path='/about'
-                element={<><h1>About this App:</h1>
-                  <p>Click on the inventory items to go to the detail page.</p>
-                  <p>In the detail page, you can update all details of the selected item, except its SKU.</p>
-                  <p>Click update to save the changes.</p>
-                  <p>Click delete to delete the item.</p>
-                  <p>Click back to get back to the inventory view.</p>
-                  <p>Click on the Add item tab to add new item.</p>
-                  <p>This is a Single Page Application made with React.</p>
-                  <p>There is no database connected to the app, so all data will be lost upon page refresh.</p>
-                </>}
+                path='/location'
+                element={<Geolocation>
+                
+                </Geolocation>}
+              ></Route>
+
+              <Route
+                path='/contact'
+                element={<ContactForm>
+                
+                </ContactForm>}
               ></Route>
 
               <Route

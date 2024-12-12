@@ -5,12 +5,6 @@ import './home.css';
 
 function Home() {
 
-    //hide header??
-
-    //clean home.css
-
-    //add drag & drop
-
     return (
         <div id="home">
             <div id="mask"></div>
@@ -65,7 +59,7 @@ function Home() {
                                     Maintain, operate, & configure point to point telecom equipment.
                                 </p>
                                 <p>
-                                    Maintain & Splice fiber optic cable for the network.
+                                    Maintain & splice fiber optic cable for the network.
                                 </p>
                             </li>
                             <li>
@@ -81,8 +75,7 @@ function Home() {
                                 </p>
                             </li>
                         </ul>
-
-
+                       
                     </section>
                     <section><Link to="/inventory">see project</Link></section>
 

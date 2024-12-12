@@ -21,7 +21,11 @@ export default function NavBar(){
             </p>
 
             <p>
-                <Link to="/about">About</Link>
+                <Link to="/location">Location</Link>
+            </p>
+
+            <p>
+                <Link to="/contact">Contact</Link>
             </p>
         </div>
     )

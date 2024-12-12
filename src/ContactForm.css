@@ -1,0 +1,39 @@
+#contactform{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    background-color: #363b46;
+    border-radius: 20px;
+    padding: 10px;
+}
+#contactform h3{
+    text-align: center;
+}
+#contactform label{
+    margin-left: 1.5vw;
+}
+#feedbackpanel{
+    color: red;
+}
+#contactform input{
+    width: 46vw;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#contactform textarea{
+    width: 46vw;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
+#contactform button{
+    width: 46vw;
+    margin-left: 1.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+#thankyoubox {
+    margin-bottom: 30vh;
+}
