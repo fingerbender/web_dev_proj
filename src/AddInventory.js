@@ -14,7 +14,7 @@ export default function AddInventory(props){
     //used in resetItem template & validate() 
     // how to use?  {}? ${}? `${}`?  none worked 
     // tried different path too, from /web_dev_proj, or /src, or /public. //../public/pic/default.jpg
-    const defaultImgPath = "/pic/default.jpg";
+    const defaultImgPath = "pic/default.jpg";
 
     const resetItem = {
         SKU: "",
