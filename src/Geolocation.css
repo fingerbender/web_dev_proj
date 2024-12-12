@@ -1,9 +1,6 @@
-/*add grid template*/
-
 #geo{
-    border: 2px solid yellow;
     margin-top: 5vh;
-    width: 50vw;
+    width: 80vw;
     background-color: #363b46;
     border-radius: 20px;
     padding: 10px;
@@ -15,9 +12,50 @@
 #geo h1{
     text-align: center;;
 }
-#geo #map {
-    width: 46vw;
-    margin-left: 2vw;
+#geolocpanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "usercoord map"
+    "metacoord map"
+    "resultbox map";
+}
+#getlocpanel #usercoord{
+    grid-area: usercoord;
+    margin: auto;
+}
+#geolocpanel #metacoor{
+    grid-area: metacoord;
+    margin: auto;
+}
+#geolocpanel #resultbox{
+    grid-area: resultbox;
+    margin: auto;
+}
+#geolocpanel #map {
+    grid-area: map;
+    width: 35vw;
+    height: 75vh;
+    margin:auto;
+    padding-bottom: 5vh;
+}
+@media (max-width: 570px) {
+    #geolocpanel{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "usercoord"
+        "metacoord"
+        "map"
+        "resultbox";
+    }
+    #geolocpanel #usercoord{
+        height:fit-content;
+    }
+    #geolocpanel #map{
+        width: 70vw;
+    }
 }
 #geo button{
     background-color: black;

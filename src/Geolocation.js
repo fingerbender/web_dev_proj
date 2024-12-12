@@ -80,14 +80,17 @@ function Geolocation() {
             <button id="locBtn" onClick={getUserLocation}>Get User Location</button>
             {/* if the user location variable has a value, print the users location */}
             {userLocation && (
-                <div>
-                    <h2>User Location</h2>
-                    <p>Latitude: {userLocation.latitude}</p>
-                    <p>Longitude: {userLocation.longitude}</p>
-
-                    <h2>React Grocery Store (Meta HQ) Location:</h2>
-                    <p>Latitude: {metaLocation.latitude}</p>
-                    <p>Longitude: {metaLocation.longitude}</p>
+                <div id="geolocpanel">
+                    <div id="usercoord">
+                        <h2>User Location</h2>
+                        <p>Latitude: {userLocation.latitude}</p>
+                        <p>Longitude: {userLocation.longitude}</p>
+                    </div>
+                    <div id="metacoord">
+                        <h2>React Grocery Store (Meta HQ) Location:</h2>
+                        <p>Latitude: {metaLocation.latitude}</p>
+                        <p>Longitude: {metaLocation.longitude}</p>
+                    </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12663.870798559145!2d-122.1667363747698!3d37.48508859216862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc96de8dc419%3A0x64979e438bf4e3a5!2sMeta%20Headquarters!5e0!3m2!1sen!2sus!4v1733950166900!5m2!1sen!2sus"
                         id="map"
                         title='React Grocery Store (Meta HQ)'
@@ -97,9 +100,10 @@ function Geolocation() {
                         referrerPolicy="no-referrer-when-downgrade">
 
                     </iframe>
-
-                    <h2>Straightline distance between your location & the store:</h2>
-                    <p>{distance} miles</p>
+                    <div id="resultbox">
+                        <h2>Straightline distance between your location & the store:</h2>
+                        <p>{distance} miles</p>
+                    </div>
                 </div>
             )}
         </div>
