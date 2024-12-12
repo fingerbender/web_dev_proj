@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/web_dev_proj/static/css/main.66a92275.css",
-    "main.js": "/web_dev_proj/static/js/main.0f254f9a.js",
+    "main.css": "/web_dev_proj/static/css/main.528a471b.css",
+    "main.js": "/web_dev_proj/static/js/main.836f95df.js",
     "static/js/453.ed3810f9.chunk.js": "/web_dev_proj/static/js/453.ed3810f9.chunk.js",
     "static/media/water.jpg": "/web_dev_proj/static/media/water.92a0654437bfaf36c7f1.jpg",
     "static/media/logo.png": "/web_dev_proj/static/media/logo.41abc8ee36a1097c2a76.png",
     "static/media/Yellowtail-Regular.ttf": "/web_dev_proj/static/media/Yellowtail-Regular.68015177cbf9575be4a4.ttf",
     "index.html": "/web_dev_proj/index.html",
-    "main.66a92275.css.map": "/web_dev_proj/static/css/main.66a92275.css.map",
-    "main.0f254f9a.js.map": "/web_dev_proj/static/js/main.0f254f9a.js.map",
+    "main.528a471b.css.map": "/web_dev_proj/static/css/main.528a471b.css.map",
+    "main.836f95df.js.map": "/web_dev_proj/static/js/main.836f95df.js.map",
     "453.ed3810f9.chunk.js.map": "/web_dev_proj/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66a92275.css",
-    "static/js/main.0f254f9a.js"
+    "static/css/main.528a471b.css",
+    "static/js/main.836f95df.js"
   ]
 }
