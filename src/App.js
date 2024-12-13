@@ -1,7 +1,9 @@
 import logo from './logo.png';
 import './App.css';
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';  
+//HashRouter only serves static page, which works on GitHub Pages
+//BrowserRouter can serve dynamic page
 import inventories from './inventory.json';
 import Home from './Home';
 import InventoryList from './InventoryList';
@@ -21,8 +23,6 @@ class App extends React.Component {
     //this.deleteItem = this.deleteItem.bind(this); 
     //this.addItem = this.addItem.bind(this);
   }
-
-
 
   //arrow function dont need bind!!
   deleteItem = (SKU) => {
